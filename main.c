@@ -7,8 +7,8 @@ int main()
 	int num;
 	char a,b;
 	if (b = getchar(), b == '-'){
-		if (scanf("%11d", &num) == 1 && (a = getchar(), a == '\n') && num > 0)
-			printf("OK! %d", num * -1);
+		if (scanf("%11d", &num) == 1 && (a = getchar(), a == '\n') && (num > 0 || num == INT_MIN))			
+    printf("OK! %d", num * -1);
 	
 		else printf("n/a %d %c", num,a);
 	}
